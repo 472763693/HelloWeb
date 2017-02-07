@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>网址导航</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+    <link rel="stylesheet" href="css/publicv2.css">
+    <link rel="stylesheet" href="css/media320.css">
+    <link rel="stylesheet" href="css/websiteNav.css">
+   <!-- <link rel="stylesheet" href="css/media-websiteNav.css">-->
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/封装script.js"></script>
+    <script src="js/website-nav.js"></script>
+    <!--<style>
+
+        .container {
+            max-width:1226px;
+            background: #fff;
+        }
+        .cateTitle {
+            height:36px;
+
+            font-size:18px;
+            line-height:36px;
+            color:#fff;
+            background: #1ABC9C;
+        }
+        .website-nav-header {
+            position: relative;
+
+        }
+        .website-nav-header a.web-share {
+            position: absolute;
+            right: 10px;
+            top:-10px;
+            padding:0 40px;
+            line-height:40px;
+            font-size:16px;
+            text-decoration: none;
+            color:#fff;
+            background: #1ABC9C;
+
+        }
+        .web-item a{
+            display: block;
+            height:90px;
+            text-decoration: none;
+            overflow: hidden;
+        }
+        .web-item a span {
+            height:30px;
+            width:100%;
+            line-height:30px;
+            white-space: nowrap;
+            overflow: hidden;
+            color: #00a67c;
+            font-weight: bold;
+        }
+        .web-item a p {
+            line-height: 18px;
+            font-size:12px;
+            color: #999;
+            height:36px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        .sideNav .row {
+            box-sizing: border-box;
+            padding-left: 15px;
+            height:40px;
+            line-height:40px;
+            font-size:14px;
+            color:#888;
+            border-right:1px solid #eee;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+
+        }
+
+    </style>-->
+</head>
+<body>
+
+
+<div id="header">
+    <div class="screen-mini">
+        <button  class="screen-nav">
+            <i class="fa fa-list"></i>
+        </button>
+    </div>
+    <div class="logo">
+        <a href="#">
+            <h1>
+                <span class="helloWeb-name">HelloWeb</span>
+                <span class="helloWeb-motto">--记录前端点滴，分享与创新开发，用技术成就梦想！</span>
+            </h1>
+        </a>
+    </div>
+    <div class="nav">
+        <div class="inner">
+            <ul class="clear">
+                <li class="menu-item ">
+                    <a href="index.html"><span class="fontawesome-text">网站首页</span></a>
+                </li>
+                <li class="menu-item has-sub ">
+                    <a href="front-end.html">前端开发</a>
+                    <ul class="sub-menu">
+                        <li class="sub-item">
+                            <a href="#">Html5+Css3</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Js+JQuery</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">UI设计</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item current_page_item">
+                    <a href="ue.html">用户体验</a>
+                </li>
+                <li class="menu-item ">
+                    <a href="interactiveDesign.html">交互设计</a>
+                </li>
+                <li class="menu-item ">
+                    <a href="skills.html">经验/技巧</a>
+                </li>
+                <li class="menu-item has-sub">
+                    <a href="resourceShare.html">资源共享</a>
+                    <ul class="sub-menu">
+                        <li class="sub-item">
+                            <a href="#">脚本代码</a></li>
+                        <li class="sub-item">
+                            <a href="#">设计素材</a></li>
+                        <li class="sub-item-item">
+                            <a href="#">软件工具</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item ">
+                    <a href="websiteNav.html">网址导航</a>
+                </li>
+                <li class="menu-item ">
+                    <a href="#">前端招聘</a>
+                </li>
+                <li class="menu-item ">
+                    <a href="#">关于本站</a>
+                </li>
+                <li class="navSea clear">
+                    <div class="toggle-search"><i class="fa fa-search"></i></div>
+                    <div class="search-expand">
+                        <div class="search-expand-inner">
+                            <form onsubmit="" method="post" name="searchForm" class="searchform" action="">
+                                <input class="search" name="keyboard"
+                                       onblur="if(this.value=='')this.value='输入关键词并回车...';"
+                                       onfocus="if(this.value=='输入关键词并回车...')this.value='';" value="输入关键词并回车..."
+                                       type="text">
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="promptBar inner clear">
+        <div class="promptBar-text">
+            <div class="pull-right">
+                <i class="fa fa-user"></i> <a href="#">注册</a> &nbsp;<i class="fa fa-power-off"></i> <a href="#">登录</a>
+            </div>
+            <div class="topTip pull-left">
+                <strong class="text-success">
+                    <i class="fa fa-volume-up"></i>
+                </strong>
+                请在Chrome、Firefox等现代浏览器浏览本站。另外提供全站开发服务，如果需要请
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=787352928&amp;site=qq&amp;menu=yes" rel="external nofollow"
+                   target="_blank" title="联系QQ">
+                    <i class="fa fa-qq"></i> 点击</a>
+                加我 QQ进行联系。
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container website-wrapper ">
+        <div class="row clear">
+            <div class="col-lg-2 ">
+                <ul class="sideNav">
+                  <!--  <li class="row">前端开发</li>
+                    <li class="row">前端开发</li>
+                    <li class="row">前端开发</li>
+                    <li class="row">前端开发</li>
+                    <li class="row">前端开发</li>-->
+                </ul>
+            </div>
+            <div class="col-lg-10 website-content ">
+                <div class="website-nav-header">
+                    <h3>网址导航</h3>
+                    <a class="web-share" href="#">
+                        <i class="fa fa-share-alt"></i>分享
+                    </a>
+                </div>
+                <ul class="website-list">
+                    <!--<li class="row">
+                        <h3 class="col-lg-12">前端开发</h3>
+                        <div class="col-lg-2  web-item">
+                            <a href="">
+                                <span>Browsershot</span>
+                                <p>超多的浏览器兼容性在线测试，免去了在本机安装N多浏览器的</p>
+                            </a>
+                        </div>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+<div id="footer">
+    <div class="inner clear">
+        <div class="trackCode pull-right">
+            <!--cnzz_stat_icon_1255670322-->
+            <span id="cnzz_stat_icon">
+                <a href="http://www.cnzz.com/stat/website.php?web_id=1255670322" target="_blank" title="站长统计">
+                    <img src="img/pic1.gif" vspace="0" border="0" hspace="0">
+                </a>
+            </span>
+        </div>
+
+        <div class="copyright">
+            <a href="http://helloweb.wang/" title="HelloWeb-前端网">HelloWeb-前端网</a>
+            <span>--分享与创新开发，版权所有，保留一切权利Copyright © 2011-2016 · All rights reserved.</span>
+        </div>
+    </div>
+</div>
+<div class="rollTop" style="display: none;">
+    <button class="btn backBtn" data-type="toTop" title="回顶部">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+</div>
+
+<div class="baiduSea" style="display: none;">
+    <form class="baiduSeaForm" action="" method="post" name="baiduSeaForm">
+        <div class="fixSeaBox">
+            <div class="logo pull-left">
+                <img src="images/floatlogo.png"/>
+            </div>
+            <div class="seaBox pull-left">
+                <input class="seaInput pull-left" type="search" name="" required="" placeholder="百度自定义搜索" >
+                <input class="seaSub pull-left" type="button" id="" value="搜索" />
+            </div>
+            <a title="关闭" class="close-btn pull-left">关闭</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>

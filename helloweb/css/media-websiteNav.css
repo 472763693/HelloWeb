@@ -1,0 +1,385 @@
+@media screen and (min-width:768px) {
+    .main .newest li p{
+        display: block;
+    }
+
+    .contentItem .tickle {
+        display: block;
+    }
+    .rollTop {
+		display: block;
+	}
+}
+@media screen and (min-width:980px){
+    #header .screen-mini {
+        display: none;
+    }
+    #header  .logo .helloWeb-motto {
+        display: inline;
+        line-height: 105px;
+        font-size:20px;
+        font-weight:200;
+        font-family:"Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+
+
+    #header .nav {
+
+        display: block;
+        width:100%;
+        background:#495754;
+
+    }
+    #header .nav li {
+	    width:100%;
+	    float:left;
+	    box-sizing: border-box;
+	    padding-left: 0px;
+	    line-height:52px;
+	    font-size:16px;
+	    background: #dceae7;
+	    border-bottom: none;
+    }
+
+
+    #header .nav .menu-item{
+        position: relative;
+        width:auto;
+        box-sizing: content-box;
+        padding-left:0;
+        float:left;
+
+        line-height:39px;
+        font-size:16px;
+    }
+    #header .nav .menu-item a {
+        display: block;
+        height:52px;
+        padding:0 20px;
+        line-height:52px;
+        color:#fff;
+        background:#4a5755;
+    }
+    #header .nav .menu-item a:hover {
+    background:#1ca58a;
+	}
+    #header .nav .has-sub {
+        position: relative;
+    }
+     #header .nav .has-sub .sub-menu {
+     	display: none;
+     }
+    #header .nav .has-sub>a {
+        display: block;
+        height:52px;
+        line-height:52px;
+        padding:0 15px;
+        color:#fff;
+        background:#4a5755;
+    }
+    #header .nav .has-sub:hover a {
+        background:#19a489;
+    }
+
+    #header .nav .has-sub .sub-menu {
+        position:absolute ;
+        left:0;
+        top:52px;
+        z-index:3;
+        width:125px;
+        margin:0 auto;
+
+        -webkit-transform-style: preserve-3d;
+        transform-style:preserve-3d;
+
+        -webkit-perspective: 400px;
+        -moz-perspective: 400px;
+        perspective: 400px;
+
+    }
+    #header .nav .has-sub .sub-menu .menu-item {
+        width:125px;
+        transform: rotateY(90deg);
+        transition:transform 400ms ease ;
+    }
+    #header .nav .has-sub .sub-menu .is-show {
+        transform: rotateY(0deg)!important;
+        background:#19a489!important;;
+    }
+
+
+    /*#header .nav .has-sub .sub-menu  a{
+
+        display: block;
+        padding: 0 20px;
+        color: #fff;
+        background:#4a5755;
+    }*/
+    #header .nav .has-sub .menu-item a:hover {
+        background:#4a5755;
+    }
+
+
+    /*  header search*/
+   	#header .nav .navSea {
+   		position: relative;
+   		float:right;
+   		width: 52px;
+        height: 52px;
+   		
+   	}
+    #header .nav .navSea .toggle-search{
+       	width: 52px;
+        height: 52px;
+        line-height: 52px;
+        background: #19a489;
+        text-align: center;
+    }
+    #header .nav .navSea .toggle-search .fa-search {
+    	font-size:24px;
+    	color: #fff;;
+    }
+    #header .nav .navSea .search-expand{
+        position: absolute;
+        display: none;
+        right: 0px;
+        top:52px;
+        
+    }
+    #header .nav .navSea .search-expand .search {
+        padding-left: 20px;
+        line-height:39px;
+        font-size:14px;
+        color:#444;
+    }
+    #header .promptBar {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+              
+    }
+    #header .promptBar .promptBar-text {
+	    height: 14px;
+	    padding: 8px 20px 18px;
+	    margin-bottom: 10px;
+	    line-height: 25px;
+	    color: #666;
+	    background-color: #fbfbfb;
+	    overflow: hidden;
+	}
+	#header .promptBar .promptBar-text .fa {
+		font-size: 18px;
+	}
+	
+	/*  side and min*/
+
+	.container {
+		width: 100%;
+	}
+	.container .main {
+		width: 100%;
+		box-sizing: border-box;
+		padding-right: 370px;
+	}
+
+	.container .sideBar {
+		display: block;
+    	width: 360px;
+    	margin-left:-360px;
+	}
+	.sideBar .widget {
+	    margin-bottom:10px;
+	    background:#fff;
+	}
+	.sideBar .widget-text {
+	    margin-top:10px;
+	}
+	.sideBar .social {
+	    padding:10px 0;
+	    margin-left:12px;
+	    text-align: center;
+	}
+	.sideBar .social a{
+	    display: block;
+	    float:left;
+	    width:45px;
+	    height:45px;
+	    margin-right:13px;
+	    border-radius: 4px;
+	}
+	.sideBar .social .sina {
+	    background:#f78585;
+	}
+	.sideBar .social .tencent {
+	    background:#27ccc0;
+	}
+	.sideBar .social .weixin {
+	    background:#6fc299;
+	}
+	.sideBar .social .mail {
+	    background:#eca3ac;
+	}
+	.sideBar .social .tencentQQ {
+	    background:#e74c3c;
+	}
+	.sideBar .social .rssMe {
+	    background:#ff7c49;
+	}
+	.sideBar .social .fa {
+	    line-height:45px;
+	    font-size:35px;
+	    color:#fff;
+
+	}
+	.sideBar .subscibe .subscibe-text {
+	    padding:0 20px 20px;
+	}
+	.sideBar .sideBar-title {
+	    height:45px;
+	    line-height:45px;
+	    font-size:16px;
+	    color:#1abc9c;
+	    font-weight:normal;
+	    border-bottom:1px solid #90bba8;
+	}
+	.sideBar .subscibe-text .subscibe-desc {
+	    height:40px;
+	    margin-top:5px;
+	    line-height:40px;
+	    color:#666;
+	}
+	.sideBar .subscibe-text .subscibe-form .rssInp {
+	    width:228px;
+	    height:32px;
+	    line-height:32px;
+	    font-size:14px;
+	    padding-left: 8px;
+	    color:#a0a0a0;
+	    background:#f7f7f7;
+	}
+	.sideBar .subscibe-text .subscibe-form .rssBtn {
+	    width:84px;
+	    height:32px;
+	    line-height:32px;
+	    font-size:14px;
+	    background:#1abc9c;
+	    color:#fff;
+	    cursor:pointer;
+	}
+	.sideBar .subscibe-text .subscibe-form .rssBtn:hover{
+	    background:#00a67c;
+	}
+	.sideBar .lististop .lististop-text{
+	    padding:0 20px 15px;
+	}
+	.sideBar .lististop-text .list-item {
+	    display: block;
+	    margin-bottom: 15px;
+	}
+	.sideBar .list-item .item-title {
+	    height:45px;
+	    width:320px;
+	    line-height:45px;
+	    font-size:16px;
+	    color:#428bca;
+	    font-weight:normal;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    text-overflow:ellipsis;
+	}
+	.sideBar .list-item .item-desc {
+	    line-height:20px;
+	    font-size:14px;
+	    color:#999;
+	}
+	.sideBar .hotTop .item-title {
+	    color:#d9534f;
+	}
+	.sideBar .cloudTags-text {
+	    padding:0 8px 15px 20px;
+	}
+	.sideBar .cloudTags-text .cloudTags-title {
+	    margin-right: 12px;
+	}
+	.sideBar .cloudTags-text .d_tags {
+	    margin-top:17px;
+	}
+	.sideBar .cloudTags-text .d_tags a {
+	    display: block;
+	    float: left;
+	    width:152px;
+	    height:25px;
+	    line-height: 25px;
+	    padding-left:5px;
+	    margin:0 9px 5px 0;
+	    color:#fff;
+	    opacity: .8;
+	}
+	.sideBar .cloudTags-text .d_tags a:nth-child(9n+1) {
+	    background-color: #15a287;
+	}
+	.sideBar .cloudTags-text .d_tags a:nth-child(9n+2) {
+	    background-color: #5cb85c;}
+	.sideBar .cloudTags-text .d_tags a:nth-child(9n+3) {
+	    background-color: #d9534f;}
+	.sideBar .cloudTags-text .d_tags a:nth-child(9n+4) {
+	    background-color: #567e95;}
+	.sideBar .cloudTags-text .d_tags a:nth-child(9n+5) {
+	    background-color: #b433ff;}
+	.sideBar .cloudTags-text .d_tags a:nth-child(9n+6) {
+	    background-color: #00a67c;}
+	.sideBar .cloudTags-text .d_tags a:nth-child(9n+7) {
+	    background-color: #b37333;}
+	.sideBar .cloudTags-text .d_tags a:nth-child(9n+8) {
+	    background-color: #f60;}
+	.sideBar .cloudTags-text .d_tags a:nth-child(9n) {
+	    background-color: #4a4a4a;}
+
+	.sideBar .readList-text {
+	    padding:0 20px 20px;
+	}
+	.sideBar .readList-text .read-item {
+	    display: block;
+	    padding:15px 0;
+	    border-bottom:1px solid #eee;
+	}
+	.sideBar .readList-text .read-item  img{
+		width:100px;
+	    float:left;
+	    margin-right: 10px;
+	}
+	.sideBar .readList-text .read-desc {
+	    display: block;
+	    height:40px;
+	    line-height:20px;
+	}
+	.sideBar .readList-text .read-time {
+	    color:#999;
+	}
+	/*  rollTop*/
+	
+	/*   baidu search*/
+	.baiduSea {
+		display: block;
+		height:75px;
+	}
+	
+
+}
+@media screen and (min-width:1226px){
+	.container {
+		width:1226px;
+	}
+	.inner {
+	    max-width:1226px!important;
+	    margin:0 auto;
+	}
+	.content {
+	    width:856px;
+
+	}
+	.side{
+	    width:360px;
+	}
+
+}

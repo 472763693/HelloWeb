@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <title>交互设计</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/publicv2.css">
+    <link rel="stylesheet" href="css/indexv2.css">
+    <link rel="stylesheet" href="css/media320.css">
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/loadContent.js"></script>
+    <script src="js/封装script.js"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="screen-mini">
+        <button  class="screen-nav">
+            <i class="fa fa-list"></i>
+        </button>
+    </div>
+    <div class="logo">
+        <a href="#">
+            <h1>
+                <span class="helloWeb-name">HelloWeb</span>
+                <span class="helloWeb-motto">--记录前端点滴，分享与创新开发，用技术成就梦想！</span>
+            </h1>
+        </a>
+    </div>
+    <div class="nav">
+        <div class="inner">
+            <ul class="clear">
+                <li class="menu-item ">
+                    <a href="index.html"><span class="fontawesome-text">网站首页</span></a>
+                </li>
+                <li class="menu-item has-sub ">
+                    <a href="front-end.html">前端开发</a>
+                    <ul class="sub-menu">
+                        <li class="sub-item">
+                            <a href="#">Html5+Css3</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">Js+JQuery</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="#">UI设计</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item current_page_item">
+                    <a href="ue.html">用户体验</a>
+                </li>
+                <li class="menu-item ">
+                    <a href="interactiveDesign.html">交互设计</a>
+                </li>
+                <li class="menu-item ">
+                    <a href="skills.html">经验/技巧</a>
+                </li>
+                <li class="menu-item has-sub">
+                    <a href="resourceShare.html">资源共享</a>
+                    <ul class="sub-menu">
+                        <li class="sub-item">
+                            <a href="#">脚本代码</a></li>
+                        <li class="sub-item">
+                            <a href="#">设计素材</a></li>
+                        <li class="sub-item-item">
+                            <a href="#">软件工具</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item ">
+                    <a href="websiteNav.html">网址导航</a>
+                </li>
+                <li class="menu-item ">
+                    <a href="#">前端招聘</a>
+                </li>
+                <li class="menu-item ">
+                    <a href="#">关于本站</a>
+                </li>
+                <li class="navSea clear">
+                    <div class="toggle-search"><i class="fa fa-search"></i></div>
+                    <div class="search-expand">
+                        <div class="search-expand-inner">
+                            <form onsubmit="" method="post" name="searchForm" class="searchform" action="">
+                                <input class="search" name="keyboard"
+                                       onblur="if(this.value=='')this.value='输入关键词并回车...';"
+                                       onfocus="if(this.value=='输入关键词并回车...')this.value='';" value="输入关键词并回车..."
+                                       type="text">
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="promptBar inner clear">
+        <div class="promptBar-text">
+            <div class="pull-right">
+                <i class="fa fa-user"></i> <a href="#">注册</a> &nbsp;<i class="fa fa-power-off"></i> <a href="#">登录</a>
+            </div>
+            <div class="topTip pull-left">
+                <strong class="text-success">
+                    <i class="fa fa-volume-up"></i>
+                </strong>
+                请在Chrome、Firefox等现代浏览器浏览本站。另外提供全站开发服务，如果需要请
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=787352928&amp;site=qq&amp;menu=yes" rel="external nofollow"
+                   target="_blank" title="联系QQ">
+                    <i class="fa fa-qq"></i> 点击</a>
+                加我 QQ进行联系。
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container inner clear">
+    <div class="main  content pull-left">
+        <h2><span><i class="fa "></i>分类：</span><span class="category-title">交互设计</span></h2>
+        <div class="sectionCard">
+            <div class="cards">
+                <!--  ajax请求，jQ插入实现-->
+            </div>
+            <div class="cardsBtn">
+                
+            </div>
+            <script type="text/javascript">
+            	$.getJSON("data/webData.json",function(dataArr){
+	        	 	loadCont(dataArr,dsignFilter(dataArr));
+	        	 });
+            	function dsignFilter(dataObj){
+            		var filterData=[];
+            		for( var i=0;i<dataObj.length;i++){
+	            		if(dataObj[i].category==="交互设计"){
+		                	filterData.push(dataObj[i]);
+		            	}
+        			}
+            		return filterData;
+            	}
+            	
+            </script>
+        </div>
+    </div>
+
+    <div class="sideBar side pull-left ">
+        <div class="widget widget-text ">
+            <div class="social clear">
+                <a class="sina" href="#" target="_blank" data-original-title="新浪微博">
+                    <i class="sinaweibo fa fa-weibo"></i>
+                </a>
+
+                <a class="tencent" href="#" target="_blank" data-original-title="腾讯微博">
+                    <i class="tencentweibo fa fa-tencent-weibo"></i>
+                </a>
+
+                <a class="weixin" data-original-title="" title="">
+                    <i class="weixins fa fa-weixin"></i>
+                    <div class="weixin-popover" style="display: none">
+                        <div class="popover bottom in">
+                            <div class="arrow"></div>
+                            <div class="popover-title">微信订阅</div>
+                            <div class="popover-content"><img src="images/weixin.gif"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a  class="mail" href="#" title="" target="_blank" data-original-title="Email">
+                    <i class="email fa fa-envelope-o"></i>
+                </a>
+
+                <a class="tencentQQ" href="#" title="" target="_blank" data-original-title="联系QQ">
+                    <i class="qq fa fa-qq"></i>
+                </a>
+
+                <a class="rssMe" href="#" target="_blank" title="" data-original-title="订阅本站">
+                    <i class="rss fa fa-rss"></i>
+                </a>
+            </div>
+        </div>
+        <div class="widget subscibe">
+            <div class="subscibe-text">
+                <h4 class="sideBar-title">邮件订阅</h4>
+                <p class="subscibe-desc">
+                    填写您的邮件地址，订阅更多的精彩内容：
+                </p>
+                <form class="subscibe-form clear" action="">
+                    <input class="rssInp pull-left" type="text" placeholder="your@email.com">
+                    <input class="rssBtn pull-left" type="button" value="订阅">
+                </form>
+            </div>
+        </div>
+        <div class="widget lististop">
+            <div class="lististop-text">
+                <h4 class="sideBar-title">置顶推荐</h4>
+
+                <a class="list-item" href="#">
+                    <h4 class="item-title">Web前端开发利器 WebStorm 11.0.3 汉化中文版</h4>
+                    <p class="item-desc">
+                        WebStorm 11汉化中文版是一款由jetbrains公司推出的商业的 JavaScript 开发工具。软件支持不同浏览器的提示，还包括所有用户自定义的函数(项目中).代码补全包含了所有流行的库
+                    </p>
+                </a>
+                <a class="list-item" href="#">
+                    <h4 class="item-title">异步加载 js 的多种解决方案</h4>
+                    <p class="item-desc">
+                        默认情况javascript是同步加载的，也就是javascript的加载时是会阻塞的，后面的元素要等待javascript加载完毕后才能进行再加载，对于一些意义不是很大的javascript，如果放在页头会导致加载很慢的话，是会严重影响用户体验的。                    </p>
+                </a>
+                <a class="list-item" href="#">
+                    <h4 class="item-title">有趣的GIF等待加载页面设计，立马get到灵感</h4>
+                    <p class="item-desc">
+                        毫无疑问，每个人都不喜欢等待。尤其是在浏览自己喜欢的页面或电影时，对着千篇一律、毫无新意的加载页面，简直枯燥乏味无聊极了！
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="widget lististop hotTop">
+            <div class="lististop-text">
+                <h4 class="sideBar-title">热门排行</h4>
+
+                <a class="list-item" href="#">
+                    <h4 class="item-title">jquery下载所有版本</h4>
+                    <p class="item-desc">
+                        插件描述：jquery下载,实时更新jquery1.2到最新2.1.4所有版本下载
+                    </p>
+                </a>
+                <a class="list-item" href="#">
+                    <h4 class="item-title">响应式web设计与CSS3媒体查询</h4>
+                    <p class="item-desc">
+                        在之前一篇译文中，我们了解了响应式Web设计的概念、组成要素以及基本的实现思路。
+                    </p>
+                </a>
+                <a class="list-item" href="#">
+                    <h4 class="item-title">什么是UI设计？怎样做好UI设计</h4>
+                    <p class="item-desc">
+                        UI的本意是User Interface也就是用户与界面的关系。UI设计是指对软件的人机交互、操作逻辑、界面美观的整体设计。
+                    </p>
+                </a>
+                <a class="list-item" href="#">
+                    <h4 class="item-title">我们为什么需要动效设计</h4>
+                    <p class="item-desc">
+                        最近越来越多的国内公司开始关注动效设计了，越来越多的团队意识到动效在产品用户体验中。
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="widget cloudTags">
+            <div class="cloudTags-text clear">
+                <div class="sideBar-title cloudTags-title">标签云</div>
+                <div class="d_tags">
+                    <a href="#" target="_blank" title="" data-original-title="253个话题">前端开发(253)</a>
+                    <a href="#" target="_blank" title="" data-original-title="187个话题">helloweb(187)</a>
+                    <a href="#" target="_blank" title="" data-original-title="175个话题">经验技巧(175)</a>
+                    <a href="#" target="_blank" title="" data-original-title="172个话题">网页制作(172)</a>
+                    <a href="#" target="_blank" title="" data-original-title="157个话题">脚本代码(157)</a>
+                    <a href="#" target="_blank" title="" data-original-title="96个话题">HTML5(96)</a>
+                    <a href="#" target="_blank" title="" data-original-title="90个话题">CSS3(90)</a>
+                    <a href="#" target="_blank" title="" data-original-title="86个话题">web趋势(86)</a>
+                    <a href="#" target="_blank" title="" data-original-title="85个话题">javascript(85)</a>
+                    <a href="#" target="_blank" title="" data-original-title="85个话题">用户体验(85)</a>
+                    <a href="#" target="_blank" title="" data-original-title="81个话题">移动网站(81)</a>
+                    <a href="#" target="_blank" title="" data-original-title="78个话题">资源共享(78)</a>
+                    <a href="#" target="_blank" title="" data-original-title="77个话题">CSS(77)</a>
+                    <a href="#" target="_blank" title="" data-original-title="70个话题">界面设计(70)</a>
+                    <a href="#" target="_blank" title="" data-original-title="58个话题">css3动画(58)</a>
+                    <a href="#" target="_blank" title="" data-original-title="57个话题">网页设计(57)</a>
+                    <a href="#" target="_blank" title="" data-original-title="56个话题">UI设计(56)</a>
+                    <a href="#" target="_blank" title="" data-original-title="52个话题">设计技巧(52)</a>
+                    <a href="#" target="_blank" title="" data-original-title="51个话题">JQuery(51)</a>
+                    <a href="#" target="_blank" title="" data-original-title="50个话题">交互设计(50)</a>
+                </div>
+            </div>
+        </div>
+        <div class="widget readList">
+            <div class="readList-text">
+                <div class="sideBar-title">推荐阅读</div>
+
+                <a class="read-item clear" href="#" title="前端同学大福利，最全的面试题目整理">
+                    <img src="images/read01.jpg" alt="">
+                    <span class="read-desc">前端同学大福利，最全的面试题目整理</span>
+                    <span class="read-time">2016-06-25</span>
+                </a>
+                <a class="read-item clear" href="#" title="css3 星球椭圆运动轨迹">
+                    <img src="images/read02.png" alt="">
+                    <span class="read-desc">css3 星球椭圆运动轨迹</span>
+                    <span class="read-time">2016-02-03</span>
+                </a>
+                <a class="read-item clear" href="#" title="（下）五个精选的 HTML5 与 CSS3 效果集锦">
+                    <img src="images/read03.jpg" alt="">
+                    <span class="read-desc">（下）五个精选的 HTML5 与 CSS3 效果集锦</span>
+                    <span class="read-time">2015-09-30</span>
+                </a>
+                <a class="read-item clear" href="#" title="十大令人振奋的移动端APP设计趋势">
+                    <img src="images/read04.jpg" alt="">
+                    <span class="read-desc">十大令人振奋的移动端APP设计趋势</span>
+                    <span class="read-time">2015-09-10</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="footer">
+    <div class="inner clear">
+        <div class="trackCode pull-right">
+            <!--cnzz_stat_icon_1255670322-->
+            <span id="cnzz_stat_icon">
+                <a href="http://www.cnzz.com/stat/website.php?web_id=1255670322" target="_blank" title="站长统计">
+                    <img src="img/pic1.gif" vspace="0" border="0" hspace="0">
+                </a>
+            </span>
+        </div>
+
+        <div class="copyright">
+            <a href="http://helloweb.wang/" title="HelloWeb-前端网">HelloWeb-前端网</a>
+            <span>--分享与创新开发，版权所有，保留一切权利Copyright © 2011-2016 · All rights reserved.</span>
+        </div>
+    </div>
+</div>
+<div class="rollTop" style="display: none;">
+    <button class="btn backBtn" data-type="toTop" title="回顶部">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+</div>
+<div class="baiduSea" style="display: none;">
+    <form class="baiduSeaForm" action="" method="post" name="baiduSeaForm">
+        <div class="fixSeaBox">
+            <div class="logo pull-left">
+                <img src="images/floatlogo.png"/>
+            </div>
+            <div class="seaBox pull-left">
+                <input class="seaInput pull-left" type="search" name="" required="" placeholder="百度自定义搜索" >
+                <input class="seaSub pull-left" type="button" id="" value="搜索" />
+            </div>
+            <a title="关闭" class="close-btn pull-left">关闭</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>

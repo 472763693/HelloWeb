@@ -1,0 +1,562 @@
+/* public*/
+body{
+    color:#777;
+    font-size:14px;
+    font-family:"Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif ;
+    text-align: left;
+    background:#eee;
+}
+* {
+    margin:0;
+    padding:0;
+}
+li {
+    list-style:none;
+}
+button,input {
+    border:none;
+    outline: none;
+    background:transparent;
+}
+img {
+    width:100%;
+    border:none;
+    display: block;
+}
+a {
+    color:#00a67c;
+    text-decoration: none;
+}
+a:hover {
+    color:#007046;
+    text-decoration: none;
+}
+.clear:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+.clear {
+    *zoom:1;
+}
+.pull-left {
+    float:left
+}
+.pull-right {
+    float:right
+}
+/*  end public*/
+#header {
+    min-width:320px;
+    width:100%;
+    margin:0 auto;
+}
+#header .screen-mini {
+    position:absolute;
+    left:20px;
+    top:20px;
+}
+#header .screen-mini .screen-nav {
+    border:none;
+    background:transparent;
+    outline: none;
+}
+#header .screen-mini .fa-list {
+    color:#fff;
+    font-size:20px;
+}
+
+#header .logo{
+    height:105px;
+    background: rgb(26,188,156) url("../images/crossword.png");
+}
+#header  .logo a{
+    display:block;
+}
+#header  .logo h1 {
+    height:105px;
+    line-height:105px;
+    color:#fff;
+    text-align: center;
+    margin:0;
+}
+#header  .logo .helloWeb-name {
+    font-size:42px;
+}
+#header  .logo .helloWeb-motto {
+    display: none;
+}
+#header .nav {
+    display: none;
+}
+#header .nav li{
+    width:100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    line-height:39px;
+    font-size:16px;
+    background: #dceae7;
+    border-bottom: 1px solid #ccdbd8;
+}
+#header .nav li a {
+    color:#444;
+}
+#header .nav .sub-menu li {
+    background:#cde7e2;
+}
+#header .nav .navSea .toggle-search{
+    float:left;
+}
+#header .nav .navSea .search-expand{
+    float:left;
+}
+#header .nav .navSea .search-expand .search {
+    padding-left: 20px;
+    line-height:39px;
+    font-size:14px;
+    color:#444;
+
+}
+#header .promptBar {
+    display: none;
+}
+
+/* end Header*/
+
+
+/* End Header*/
+
+/*  footer*/
+#footer {
+	width: 100%;
+	box-sizing: border-box;
+    padding:16px 20px 14px;
+    color:#aaa;
+    background:#333;
+    border-top:8px solid #00a67c;
+
+    -webkit-box-shadow: 0 -5px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 -5px 0 rgba(0,0,0,.1);
+    box-shadow: 0 -5px 0 rgba(0,0,0,.1);
+}
+#footer .copyright{
+    min-height:20px;
+    line-height:20px;
+}
+#footer .trackCode {
+    height:20px;
+    line-height:20px;
+}
+#footer .copyright a {
+    color:#aaa;
+}
+#footer .copyright a:hover {
+    color:#ebf9f6;
+    text-decoration: underline;
+}
+/* End footer*/
+/*  sideBar*/
+.container .sideBar {
+    width: 360px;
+    margin-left:-360px;
+}
+.sideBar .widget {
+    margin-bottom:10px;
+    background:#fff;
+}
+.sideBar .widget-text {
+    margin-top:10px;
+}
+.sideBar .social {
+    padding:10px 0;
+    margin-left:12px;
+    text-align: center;
+}
+.sideBar .social a{
+    display: block;
+    float:left;
+    width:45px;
+    height:45px;
+    margin-right:13px;
+    border-radius: 4px;
+}
+.sideBar .social .sina {
+    background:#f78585;
+}
+.sideBar .social .tencent {
+    background:#27ccc0;
+}
+.sideBar .social .weixin {
+    background:#6fc299;
+}
+.sideBar .social .mail {
+    background:#eca3ac;
+}
+.sideBar .social .tencentQQ {
+    background:#e74c3c;
+}
+.sideBar .social .rssMe {
+    background:#ff7c49;
+}
+.sideBar .social .fa {
+    line-height:45px;
+    font-size:35px;
+    color:#fff;
+
+}
+.sideBar .subscibe .subscibe-text {
+    padding:0 20px 20px;
+}
+.sideBar .sideBar-title {
+    height:45px;
+    line-height:45px;
+    font-size:16px;
+    color:#1abc9c;
+    font-weight:normal;
+    border-bottom:1px solid #90bba8;
+}
+.sideBar .subscibe-text .subscibe-desc {
+    height:40px;
+    margin-top:5px;
+    line-height:40px;
+    color:#666;
+}
+.sideBar .subscibe-text .subscibe-form .rssInp {
+    width:228px;
+    height:32px;
+    line-height:32px;
+    font-size:14px;
+    padding-left: 8px;
+    color:#a0a0a0;
+    background:#f7f7f7;
+}
+.sideBar .subscibe-text .subscibe-form .rssBtn {
+    width:84px;
+    height:32px;
+    line-height:32px;
+    font-size:14px;
+    background:#1abc9c;
+    color:#fff;
+    cursor:pointer;
+}
+.sideBar .subscibe-text .subscibe-form .rssBtn:hover{
+    background:#00a67c;
+}
+.sideBar .lististop .lististop-text{
+    padding:0 20px 15px;
+}
+.sideBar .lististop-text .list-item {
+    display: block;
+    margin-bottom: 15px;
+}
+.sideBar .list-item .item-title {
+    height:45px;
+    width:320px;
+    line-height:45px;
+    font-size:16px;
+    color:#428bca;
+    font-weight:normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.sideBar .list-item .item-desc {
+    line-height:20px;
+    font-size:14px;
+    color:#999;
+}
+.sideBar .hotTop .item-title {
+    color:#d9534f;
+}
+.sideBar .cloudTags-text {
+    padding:0 8px 15px 20px;
+}
+.sideBar .cloudTags-text .cloudTags-title {
+    margin-right: 12px;
+}
+.sideBar .cloudTags-text .d_tags {
+    margin-top:17px;
+}
+.sideBar .cloudTags-text .d_tags a {
+    display: block;
+    float: left;
+    width:152px;
+    height:25px;
+    line-height: 25px;
+    padding-left:5px;
+    margin:0 9px 5px 0;
+    color:#fff;
+    opacity: .8;
+}
+.sideBar .cloudTags-text .d_tags a:nth-child(9n+1) {
+    background-color: #15a287;
+}
+.sideBar .cloudTags-text .d_tags a:nth-child(9n+2) {
+    background-color: #5cb85c;}
+.sideBar .cloudTags-text .d_tags a:nth-child(9n+3) {
+    background-color: #d9534f;}
+.sideBar .cloudTags-text .d_tags a:nth-child(9n+4) {
+    background-color: #567e95;}
+.sideBar .cloudTags-text .d_tags a:nth-child(9n+5) {
+    background-color: #b433ff;}
+.sideBar .cloudTags-text .d_tags a:nth-child(9n+6) {
+    background-color: #00a67c;}
+.sideBar .cloudTags-text .d_tags a:nth-child(9n+7) {
+    background-color: #b37333;}
+.sideBar .cloudTags-text .d_tags a:nth-child(9n+8) {
+    background-color: #f60;}
+.sideBar .cloudTags-text .d_tags a:nth-child(9n) {
+    background-color: #4a4a4a;}
+
+.sideBar .readList-text {
+    padding:0 20px 20px;
+}
+.sideBar .readList-text .read-item {
+    display: block;
+    padding:15px 0;
+    border-bottom:1px solid #eee;
+}
+.sideBar .readList-text .read-item  img{
+    float:left;
+    margin-right: 10px;
+}
+.sideBar .readList-text .read-desc {
+    display: block;
+    height:40px;
+    line-height:20px;
+}
+.sideBar .readList-text .read-time {
+    color:#999;
+}
+/*  end sideBar*/
+/*   sectionCard cardsBtn*/
+.main .sectionCard  .cardsBtn {
+    height:27px;
+    padding:20px 0 15px 0;
+    line-height:27px;
+    background:#fff;
+    text-align: center;
+}
+.main .sectionCard  .cardsBtn a{
+    display: inline-block;
+    height:27px;
+    margin-left: 6px;
+    color:#666;
+    line-height:27px;
+    padding:0 15px;
+    background:#eee;
+}
+.main .sectionCard  .cardsBtn .current-page {
+    color:#fff;
+    background:#00a67c;
+}
+.main .sectionCard  .cardsBtn a:hover {
+    color:#fff;
+    background:#00a67c;
+}
+.main .sectionCard  .cardsBtn .codeBtns {
+    display: inline-block;
+}
+
+/*   end cardsBtn*/
+
+/*   contentItem*/
+.contentItem {
+    position: relative;
+    box-sizing:border-box;
+    width:100%;
+    padding:15px;
+    background:#fff;
+    margin-bottom: 15px;
+}
+.contentItem  .itemTitle {
+    width:100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height:26px;
+    margin-bottom: 15px;
+}
+
+.contentItem  .itemTitle a {
+    /*width:100%;*/
+
+    line-height:26px;
+    font-size:16px;
+    font-weight: normal;
+}
+.contentItem  .itemTitle .category {
+    position: relative;
+    display: inline-block;
+    height:20px;
+    padding:0 5px;
+    margin-right: 10px;
+    line-height: 20px;
+    font-size:14px;
+    color:#fff;
+    background:#d9534f;
+}
+.contentItem  .itemTitle .category:after {
+    position: absolute;
+    right: -8px;
+    top:6px;
+    content: '';
+    width:0;
+    height:0;
+    border:4px solid transparent;
+    border-left-color:#d9534f;
+
+}
+
+
+.contentItem .itemTeletext {
+    width:100%;
+}
+
+.contentItem .itemTeletext  .itemImg {
+    display:table;/*  行元素垂直居中*/
+    width:34.48%;
+    margin-right:10px;
+    overflow: hidden;
+}
+.contentItem .itemTeletext  .itemImg a {
+    display: block;
+}
+.contentItem .itemTeletext  .itemImg img{
+    transition: all ease .5s;
+}
+.contentItem .itemTeletext  .itemImg a:hover img{
+    transform: scale(1.2,1.2);
+}
+.contentItem .itemTeletext  .itemInfo {
+    width:62.06%;
+    max-height:74px;
+    overflow: hidden;
+    line-height:24px;
+    color:#777;
+}
+/*  tickle反馈定位*/
+.contentItem .tickle {
+    display: none;
+    position:absolute;
+    right:20px;
+    bottom: 20px;
+}
+.contentItem .tickle li {
+    float:left;
+    height:17px;
+    margin-left: 20px;
+    font-size:13px;
+    line-height:17px;
+    color:#999;
+}
+.contentItem .tickle .fa {
+    font-size:14px;
+    line-height: 17px;
+    margin-right: 3px;
+}
+
+/*  End contentItem*/
+/*   rollTop*/
+.rollTop {
+	
+	position: fixed;
+	right:10px;
+	bottom: 50px;
+}
+.rollTop .backBtn {
+	width: 36px;
+	height: 36px;
+	background: #11a99b;
+	text-align: center;
+	line-height: 36px;
+}
+.rollTop .backBtn .fa-arrow-up {
+	font-size: 16px;
+	color: #fff;
+}
+/*  baidu search*/
+.baiduSea {
+	display: none;
+	position:fixed;
+	left: 0;
+	top: 0;
+	width:100%;
+	height: 0;
+	overflow: hidden;
+	background: rgba(0,0,0,.5);
+	text-align: center;
+}
+
+.baiduSea .fixSeaBox {
+	position: relative;
+	width: 980px;
+	display: inline-block;
+	padding-top:15px;
+	
+	margin: 0 auto;
+}
+.baiduSea .fixSeaBox .seaBox {
+	width:755px;
+
+	
+}
+.baiduSea .fixSeaBox .logo {
+	margin-right: 10px;
+}
+.baiduSea .fixSeaBox .seaBox .seaInput {
+	width: 590px;
+    height: 40px;
+    padding-left: 5px;
+    border-color: #42455d;
+    background-color: #fff;
+    color: #666;
+    font-size: 14px;
+    font-family: "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+    border-left: none;
+}
+.baiduSea .fixSeaBox .seaBox .seaSub {
+	display: block;
+	width:60px;
+	height:40px;
+	background:#1abc9c;
+	color:#fff;
+	text-align: center;
+	
+}
+
+
+.baiduSea .fixSeaBox .close-btn {
+	position: absolute;
+    left: 920px;
+    top: 19px;
+    background: url(../images/close_btn.png) no-repeat;
+    width: 32px;
+    height: 32px;
+    display: block;
+    font-size: 0;
+    z-index: 99;
+    transition: all 0.5s ease 0s;
+    padding: 0;
+}
+.baiduSea .fixSeaBox .close-btn:hover {
+	transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

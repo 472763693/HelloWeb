@@ -1,0 +1,135 @@
+/*    移动优先的布局*/
+.website-wrapper {
+    min-width:320px;
+    width:100%;
+    background:#fff;
+}
+.website-wrapper .sideNav {
+    display: none;
+}
+.website-wrapper .website-content {
+    width:100%;
+}
+.website-nav-header {
+    position: relative;
+}
+.website-nav-header h3 {
+    width:100%;
+    height:40px;
+    line-height:40px;
+
+    text-align: center;
+}
+.website-nav-header .web-share {
+    position: absolute;
+    right:2%;
+    top:10px;
+    width:50px;
+    height:14px;
+    padding:3px;
+    line-height:14px;
+    color:#fff;
+    background: #1ABC9C;
+    text-align: center;
+}
+.website-list h3{
+    width:100%;
+    height:40px;
+    font-size: 16px;
+    line-height:40px;
+    color:#fff;
+    background: #1ABC9C;
+    text-align: center;
+}
+
+.web-item {
+    float:left;
+    width:33.3333%;
+    height:86px;
+    box-sizing: border-box;
+    padding:10px;
+    overflow: hidden;
+}
+.web-item span {
+    height:30px;
+    line-height:30px;
+    color:#00a67c;
+    font-weight: bold;
+
+}
+.web-item p {
+    height:36px;
+    line-height:18px;
+    color:#999;
+    overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+    .web-item {
+        width:20%;
+    }
+    .website-nav-header {
+        padding: 15px 0;
+
+    }
+    .website-nav-header h3 {
+        width:100%;
+        height:40px;
+        line-height:40px;
+        font-size: 24px;
+        font-weight: normal;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+    }
+    .website-nav-header .web-share {
+        top:20px;
+        width:80px;
+        height:26px;
+        line-height:26px;
+
+    }
+}
+@media screen and (min-width: 980px) {
+    .website-wrapper .sideNav {
+        float: left;
+        display: block;
+        width:15%;
+    }
+
+
+    .sideNav .row {
+        box-sizing: border-box;
+        padding-left: 10%;
+        height:40px;
+        line-height:40px;
+        font-size:14px;
+        color:#888;
+        border-right:1px solid #eee;
+        border-bottom: 1px solid #eee;
+        cursor: pointer;
+
+    }
+    .website-wrapper  .col-lg-10 {
+        box-sizing: border-box;
+        padding:0 5%;
+        width:85%;
+        float: right;
+    }
+
+}
+@media screen and (min-width:1226px){
+    .website-wrapper {
+        width:1226px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
