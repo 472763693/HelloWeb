@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+body {
+  font-family: Arial, "Microsoft YaHei UI Light";
+}
+
+ul,li {
+	list-style: none;
+}
+
+/*12格容器*/
+#iconWall {
+	width: 840px;
+	background-color: #f0f0f0;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 1px;
+	padding-left: 1px;
+	border: 1px solid #f0f0f0;
+	list-style: none;
+	box-shadow: 0 0 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,.5);
+	-o-box-shadow: 0 0 3px rgba(0,0,0,.5);
+	-ms-box-shadow: 0 0 3px rgba(0,0,0,.5);
+}
+
+#iconWall li {
+  width: 138px;
+  height: 108px;
+  float: left;
+  border: 1px solid #fff;
+  box-shadow: 0 0 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 0 3px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 0 3px rgba(0,0,0,.5);
+  -o-box-shadow: 0 0 3px rgba(0,0,0,.5);
+  -ms-box-shadow: 0 0 3px rgba(0,0,0,.5);
+  position: relative;
+}
+
+/*3D旋转区域 */
+.img-back, .img-front {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  width: 138px;
+  height: 108px;
+  text-align: center;
+  line-height: 108px;
+}
+
+li img {
+  vertical-align: middle;
+}
+
+
+.img-3d {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.img-back {
+  transform: rotateY(180deg);
+}
+
+/*旋转换品牌*/
+#btnRefresh {
+  text-align: center;
+  transition: .3s linear;
+  background-color: #fff;
+}
+.iconRefresh {
+  width: 28px;
+  height: 28px;
+  background: url("../images/refresh1.png");
+  margin: 32px auto 0;
+}
+#btnRefresh:hover {
+  color: #fff;
+  background-color: #dd2727;
+  transition: 0s;
+}
+#btnRefresh:hover .iconRefresh {
+  background: url("../images/refresh2.png");
+}
+
+
+/*图片的排列*/
+.mask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 138px;
+	height: 108px;
+	background-color: rgba(0, 0, 0, .7);
+	opacity: 0;
+}
+
+.mask img {
+  float: right;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+.mask p {
+  font-size: 12px;
+  color: #fff;
+  margin-top: 45px;
+  text-align: center;
+}
+.mask a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  background-color: red;
+  width: 70px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 9px;
+}
+
+li:hover .mask {
+  opacity: 1;
+  transition: .3s linear;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.4;
+}
